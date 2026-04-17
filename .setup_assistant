@@ -1,0 +1,23 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: GantBot
+    relative_path: description/robot_only.urdf.xacro
+  srdf:
+    relative_path: config/GantBot.srdf
+  package_settings:
+    author_name: wisnu
+    author_email: kusumawisnu1@gmail.com
+    generated_timestamp: 1776407389
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position

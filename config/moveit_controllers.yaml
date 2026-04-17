@@ -1,0 +1,16 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - gantry_planner_controller
+
+  gantry_planner_controller:
+    type: FollowJointTrajectory
+    joints:
+      - y_joint
+      - x_joint
+      - z_joint
+    action_ns: follow_joint_trajectory
+    default: true
